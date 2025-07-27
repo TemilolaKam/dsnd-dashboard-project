@@ -49,7 +49,7 @@ class MatplotlibViz(BaseComponent):
     def visualization(self, entity_id, model):
         pass
 
-    def set_axis_styling(self, ax, bordercolor='white', fontcolor='white'):
+    def set_axis_styling(self, ax, bordercolor='black', fontcolor='white'):
         
         ax.title.set_color(fontcolor)
         ax.xaxis.label.set_color(fontcolor)
@@ -60,6 +60,6 @@ class MatplotlibViz(BaseComponent):
             spine.set_edgecolor(bordercolor)
 
         for line in ax.get_lines():
-            line.set_linewidth(4)
+            line.set_linewidth(10)
             line.set_linestyle('dashdot')
 
